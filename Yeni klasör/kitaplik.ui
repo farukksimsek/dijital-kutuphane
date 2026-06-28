@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DockWidget</class>
+ <widget class="QDockWidget" name="DockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- KİTAPLIK EKRANI BÜTÜNLÜK TASARIMI --- */
+
+/* Genel Arkaplan - Açık Krem */
+#DockWidget &gt; QWidget#dockWidgetContents {
+    background-color: #fcf9f2;
+}
+
+/* Ana Sayfaya Geri Dön Butonu (Diğer ekranla aynı) */
+QPushButton#geri_don_2 {
+    background-color: #769c80; 
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+QPushButton#geri_don_2:hover {
+    background-color: #63866c;
+}
+
+/* Krem/Yeşil Temalı Tablo (Diğer ekranla aynı) */
+QTableWidget#tableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f8f6f0; 
+    gridline-color: #e0e0e0;
+    color: #333333;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    selection-background-color: #769c80; /* Satır seçildiğinde açık yeşil olur */
+    selection-color: white;
+}
+
+/* Tablo Başlıkları */
+QHeaderView::section {
+    background-color: #2d4b39; 
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #3b604a;
+}</string>
+  </property>
+  <property name="windowTitle">
+   <string>Dijital Kütüphane</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>146</x>
+      <y>15</y>
+      <width>771</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>KİTAP ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>KİTAP ADI</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>YAZAR ADI</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SAYFA SAYISI</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>KİTAP DURUMU</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="geri_don_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>131</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ana Sayfaya
+Geri Dön</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
